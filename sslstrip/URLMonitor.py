@@ -25,17 +25,23 @@ class URLMonitor:
         self.strippedURLs       = set()
         self.strippedURLPorts   = {}
         self.faviconReplacement = False
-        self.sustitucion["mail.google.com"] = "gmail.google.com"
         self.real["gmail.google.com"] = "mail.google.com"
 
-        self.sustitucion["www.facebook.com"] = "social.facebook.com"
-        self.real["social.facebook.com"] = "www.facebook.com"
+        self.sustitucion["www.facebook.it"] = "sociale.facebook.it"
+        self.real["sociale.facebook.it"] = "www.facebook.it"
 
-        self.sustitucion["accounts.google.com"] = "cuentas.google.com"
-        self.real["cuentas.google.com"] = "accounts.google.com"
+        self.sustitucion["www.facebook.com"] = "sociale.facebook.com"
+        self.real["sociale.facebook.com"] = "www.facebook.com"
+
+        self.sustitucion["accounts.google.com"] = "loggme.google.com"
+        self.real["loggme.google.com"] = "accounts.google.com"
+        
+        self.sustitucion["accounts.google.it"] = "loggme.google.it"
+        self.real["loggme.google.it"] = "accounts.google.it"
 
         self.sustitucion["accounts.google.es"] = "cuentas.google.es"
         self.real["cuentas.google.es"] = "accounts.google.es"
+
 
         
     def isSecureLink(self, client, url):
